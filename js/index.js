@@ -143,14 +143,14 @@ const darwCardsUI = (cards) =>
                             <p class="text-white-50 mb-3 fw-bold" style="font-size: 14px; max-width: 80%;"> ${card.descrption}</p>
                     <div>
                             <div class="d-flex" style="max-width: 100%;">
-                                <img src="./images/Elipse 15.png" alt="img" style="max-width: 30px;">
-                                <img src="./images/Elipse 15.png" alt="img"
+                                <img src="images/Elipse 15.png" alt="img" style="max-width: 30px;">
+                                <img src="images/Elipse 15.png" alt="img"
                                     style="max-width: 30px;margin-left: -5px !important;">
-                                <img src="./images/Elipse 15.png" alt="img"
+                                <img src="images/Elipse 15.png" alt="img"
                                     style="max-width: 30px;margin-left: -5px !important;">
-                                <img src="./images/Elipse 15.png" alt="img"
+                                <img src="images/Elipse 15.png" alt="img"
                                     style="max-width: 30px;margin-left: -5px !important;">
-                                <img src="./images/Elipse 15.png" alt="img"
+                                <img src="images/Elipse 15.png" alt="img"
                                     style="max-width: 30px;margin-left: -5px !important;">
                             </div>
                     </div>
