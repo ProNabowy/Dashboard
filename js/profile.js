@@ -36,14 +36,13 @@ control_font();
 
 
 
-// ========================================== Create Function To Control img statue update & delete... =====================================================
+// ========================================== Create Function To Control img statue  delete... =====================================================
 
-const update_delete_imgs = _ =>
+const delete_imgs = _ =>
 {
     const profile_img = document.querySelector(".profile-header img");
     const photo_controler = document.querySelector(".info-details img");
     const delete_btn = document.querySelector(".delete-img-btn");
-    const update_btn = document.querySelector("update-img-btn");
     // delete img when user add to delete btn
     delete_btn.addEventListener("click", _ =>
     {
@@ -52,4 +51,4 @@ const update_delete_imgs = _ =>
     });
 
 }
-update_delete_imgs();
+delete_imgs();
