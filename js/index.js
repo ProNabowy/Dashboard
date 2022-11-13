@@ -1,8 +1,10 @@
+import { setSwiperImg } from "./dom_Functions.js";
 import {images , randomNum , filterApperUi , setUserName , fullscreen_img} from "./basic_Functions.js";
-
 // Create function To check if Local Storage Have name or not
 
-setUserName(".user-name" , "name");
+( function ()
+{
+    setUserName(".user-name" , "name");
 
 let arrayOftasks = [
     {
@@ -330,64 +332,13 @@ function draggableElements()
 
 draggableElements();
 
-// =============================  Set Swiper img Function   =================================
-
-const person_Names = [
-    "Tomas",
-    "Michal",
-    "Elena",
-    "Jorge",
-    "John",
-    "Jesica",
-    "Zula",
-    "Seth",
-    "Ted",
-    "Keith",
-    "Paul",
-    "Ron",
-    "Craig",
-    "Bruce",
-]
-
-function setSwiperImg()
-{
-
-    const  domFunctionImgs = (srcIndex, caption) => 
-    {
-        let swiper_Slide = [...document.querySelectorAll(".swiper-slide")];
-
-        for (let i = 0; i < swiper_Slide.length; i++)
-        {
-            // Set img var style
-            let img_style = "margin-bottom: 5px !important; cursor: pointer; border-radius: 50%; border: 2px solid #f4782e; display: block;";
-            // Create warpper Div to set img and caption img as innerHTML 
-            let div = document.createElement("div");
-            div.classList = "wrapper-img d-flex flex-column me-2 align-items-center fw-bold";
-            div.style.fontSize = "11px";
-
-            // Create img and caption img
-            let child = `
-                    <img src="${srcIndex}" width="30px" height="30px" alt="img" style="${img_style}">
-                    <span class="d-block fw-bold" style="font-size: 12px;">${caption}</span>`
-            
-            div.innerHTML = child;
-            swiper_Slide[i].appendChild(div);
-
-        };
-    };
-
-    // Re-calling Dom Function  10 times to set at swiper img
-    for (let i = 0; i < 10; i++)
-    {
-            domFunctionImgs(images[i], person_Names[i], (i + 1));
-    }
-
-}
+// =============================  import Swiper img Function from D   =================================
 
 
-setSwiperImg();
 
-window.addEventListener("resize", setSwiperImg);
+setSwiperImg(images);
+
+window.addEventListener("resize", _ => setSwiperImg(images ));
 
 
 //  =============== import Toggle Fullscreen img  Request ===============
@@ -612,3 +563,5 @@ const select_Corract_Opation = _ =>
     });
 }
 select_Corract_Opation();
+
+})()

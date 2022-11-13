@@ -97,7 +97,7 @@ body.light-mode .bg-white {
 .active_scale_with_right {
     visibility: visible !important;
     opacity: 1 !important;
-    right: 0;
+    right: 0 !important;
     transform: translate(0%, -50%) scale(1) !important;
 }
 .scale_controal {
