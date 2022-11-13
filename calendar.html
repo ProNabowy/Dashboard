@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Select css libraries -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/noramliz.css">
+        <!-- Animation library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;700;900&display=swap"
+            rel="stylesheet">
+        <title>Setting</title>
+        <style>
+            .no-gutter>[class*='col-'] {
+                padding-right: 5px !important;
+                padding-left: 5px !important;
+            }
+        </style>
+    </head>
+
+    <body class="bg-black">
+        <div class="page d-flex">
+            <div class="nav-wrapper"
+                style="border-right: 1px solid var(--main-color); background-color: var(--light-color);">
+                <h4 class="logo mb-lg-5 mb-md-5 text-white fw-bold text-center fst-italic position-relative p-3 ">
+                    ProNabowy</h4>
+                <ul class="link-items">
+                    <li class="link-item active">
+                        <a href="/index.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span style="--i: 1">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/profile.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-bookmark"></i><span style="--i: 5">Profile</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/setting.html" class="link text-white-50  nav-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <span style="--i: 2">Settings</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#" class="link text-white fw-bold nav-link">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span style="--i: 3">Calender</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/files.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span style="--i: 4">Files</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/contact.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span style="--i: 6">Contact</span>
+                        </a>
+                    </li>
+                    <li class="link-item light-mode">
+                        <a href="#" class="link text-white-50 nav-link">
+                            <div class="mode-icone"><i class="fa-regular fa-moon"></i></div>
+                            <span style="--i: 8">dark mode</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-aos="fade-left" class="page-sections pt-3 pb-3  text-white"
+                style="background-color: var(--bg-color); width: calc(100% - 300px);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 p-2 p-1" style="background-color: var(--main-color); border-radius: 10px;">
+                            <div>
+                                <div style="background-color: var(--bg-color); border-radius: 10px;" class="p-2">
+                                    <div class="calendar-head user-select-none fw-bold p-2 mb-2 d-flex-between"
+                                        style="border-bottom: 1px solid var(--second-color);">
+                                        <p><span class="month me-2"></span><span class="year"></span></p>
+                                        <div>
+                                            <p class="left-angel d-inline-flex justify-content-center align-items-center"
+                                                style="cursor: pointer; width: 30px; height:30px; border-radius:50%; background-color: #333;">
+                                                <i class="fa-solid fa-angle-left" style="color:white;"></i>
+                                            </p>
+                                            <p class="right-angel d-inline-flex justify-content-center align-items-center"
+                                                style="cursor: pointer; width: 30px; height:30px; border-radius:50%; background-color: #333;">
+                                                <i class="fa-solid fa-angle-right" style="color: white;"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="days-wrapper text-center">
+                                        <div class="d-flex-between">
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Man</p>
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Tue</p>
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Wed</p>
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Thu</p>
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Fri</p>
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Set</p>
+                                            <p style="width: calc(100% / 7);" class="fw-bold p-2">Sun</p>
+                                        </div>
+                                        <div class="days d-flex align-items-center flex-wrap">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-line p-3 mb-2">
+                                    <h2 class="fw-bold mb-3"><span class="day-by-week-str me-2"
+                                            style="font-size: 19px;"></span><sub class="today-by-week"
+                                            style="font-size: 15px;"></sub></h2>
+                                    <div>
+                                        <div class="d-flex-center  p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>9:23</p>
+                                            </div>
+                                            <div class="d-flex align-items-center p-2 time-line-task active_task"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Primary Task
+                                                    <br>
+                                                    Accounts and tax
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>3:16</p>
+                                            </div>
+                                            <div class="d-flex align-items-center time-line-task p-2"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Secondary Task
+                                                    <br>
+                                                    Business Plans
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>10:52</p>
+                                            </div>
+                                            <div class="d-flex align-items-center time-line-task p-2"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Additional Task
+                                                    <br>
+                                                    Risk Analysis
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>7:36</p>
+                                            </div>
+                                            <div class="d-flex align-items-center time-line-task p-2"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Daily Task
+                                                    <br>
+                                                    Preparing Budget forecasts
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>2:17</p>
+                                            </div>
+                                            <div class="d-flex align-items-center time-line-task p-2"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Desgin Meeting
+                                                    <br>
+                                                    Creating The Main UI Assests and illustaryion
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>6:59</p>
+                                            </div>
+                                            <div class="d-flex align-items-center time-line-task p-2"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Client Meeting
+                                                    <br>
+                                                    Updating The Current User interface
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-3">
+                                            <div class="pseudo-time position-relative fw-bold h-100"
+                                                style="padding: 20px 10px !important; width: 10%; color: var(--bs-link-color);">
+                                                <p>8:47</p>
+                                            </div>
+                                            <div class="d-flex align-items-center time-line-task p-2"
+                                                style="width: 90%; background-color: var(--bg-color); border-radius: 7px;">
+                                                <p
+                                                    style="opacity: 0.6; font-size: 14px ; padding: 10px 20px 10px 20px; border-left: 2px solid var(--bs-link-color);">
+                                                    Type
+                                                    <br>
+                                                    Subject
+                                                </p>
+                                                <h4 style="font-size: 17px; line-height: 1.8; " class="ps-3 fw-bold">
+                                                    Adnin Meeting
+                                                    <br>
+                                                    Development Task Assign For The Product Page
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-2 " style=" min-height: 100vh;">
+                            <div style=" background-color: var(--off-dark); width: 100%; border-radius: 10px;"
+                                class="p-2">
+                                <div class="chat-head mb-4 d-flex-between p-2 user-select-none">
+                                    <span
+                                        style="cursor: pointer; width: 30px; height: 30px; border-radius: 50%; background-color: var(--main-color);"
+                                        class="d-flex-center ms-1"><i class="fa-solid fa-xmark"></i></span>
+                                    <div>
+                                        <span style="cursor: pointer;" class="me-3"><i
+                                                class="fa-solid fa-video"></i></span>
+                                        <span style="cursor: pointer;" class="me-3"><i
+                                                class="fa-solid fa-phone"></i></span>
+                                        <span style="cursor: pointer;" class="me-3"><i
+                                                class="fa-solid fa-ellipsis-vertical"></i></span>
+                                    </div>
+                                </div>
+                                <div class="profile-info p-2 mb-5">
+                                    <div class="text-center">
+                                        <img src="images/nabowy.PNG" style="max-width: 100%;" alt="my-photo"
+                                            width="200px" height="180px">
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <h2 class="fw-bold" style="font-size: 15px;">Mahmoud Nabowy</h2>
+                                        <p style="font-size: 10px;">nabowy.work@gmail.com</p>
+                                    </div>
+                                    <div>
+                                        <p style="font-size: 13px; font-weight: bold;"
+                                            class="text-white-50 text-center">
+                                            Front-end Developer
+                                            <br>
+                                            Some Knowladg For UX/UI Designar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="full-chat pb-3" style="max-height: 532px; overflow-y: auto;">
+                                    <h6 class="text-center fw-bold position-relative mb-3">Full Chat</h6>
+                                    <div class="chat-wrapper d-flex flex-column">
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;">
+                                            <p style="font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;">Hi,
+                                                i have great news. A new project is
+                                                starting , i'll tell you more about it later</p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:29</span>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;">
+                                            <p style="font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;">it's
+                                                a new neobank with great deposit terms
+                                            </p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:30</span>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;">
+                                            <p style="font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;">
+                                                nabowy.work@gmail.com
+                                                <br>
+                                                https://www.nabowy.online
+                                            </p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:30</span>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%; align-self: flex-end;">
+                                            <p style="font-weight: 400; font-size: 12px; width: 85%;">
+                                                Hi. wow, that's intriguing
+                                            </p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:31</span>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%; align-self: flex-end;">
+                                            <p style="font-weight: 400; font-size: 12px; width: 85%;">
+                                                I'm looking forward to the details
+                                            </p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="width: 10%; font-size: 11px; align-self: flex-end;  margin: 0 10px !important;">8:31</span>
+                                        </div>
+                                        <div class="mb-2"
+                                            style="box-shadow: 0px 0px 180px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;">
+                                            <div class="d-flex-center p-1 pe-3 ps-3">
+                                                <p style="font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;"
+                                                    class="text-center fw-bold pe-3 ps-3">
+                                                    MEETING
+                                                    <br>
+                                                    <br>
+                                                    <span class="mb-2">Jul 28</span>
+                                                    <br>
+                                                    <br>
+                                                    <span class="mb-2">8:40 <sub>pm</sub></span>
+                                                </p>
+                                                <span class="text-white-50 fw-bold "
+                                                    style="opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:30</span>
+                                            </div>
+                                            <p class="p-2 p-1 pe-3 ps-3"
+                                                style="border-top: 1px solid black; font-size: 13px; font-weight: bold;">
+                                                Add to Schedule</p>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;">
+                                            <p style="font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;"
+                                                class="d-flex-center">
+                                                <i class="fa-solid fa-play me-2"
+                                                    style="padding: 8px; cursor: pointer; background: #606878; border-radius: 50%;"></i>
+                                                <span>-||---|||-----|||||--|||--|||</span>
+                                            </p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:29</span>
+                                        </div>
+                                        <div class="d-flex-center p-1 mb-2"
+                                            style="box-shadow: 0px 0px 20px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%; align-self: flex-end;">
+                                            <p style="font-weight: 400; font-size: 12px; width: 85%;">
+                                                Okay, I can't wait to get started
+                                            </p>
+                                            <span class="text-white-50 fw-bold "
+                                                style="width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">8:31</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-chat mt-2">
+                                    <label class="w-100 d-flex-center position-relative"
+                                        style="border-radius: 8px; background-color: #575f6e38 ;">
+                                        <span style="position: absolute; left: 5px; cursor: pointer;">
+                                            <svg viewBox="0 0 24 24" height="24" width="24"
+                                                preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px"
+                                                y="0px" enable-background="new 0 0 24 24" xml:space="preserve">
+                                                <path fill="currentColor"
+                                                    d="M1.816,15.556v0.002c0,1.502,0.584,2.912,1.646,3.972s2.472,1.647,3.974,1.647 c1.501,0,2.91-0.584,3.972-1.645l9.547-9.548c0.769-0.768,1.147-1.767,1.058-2.817c-0.079-0.968-0.548-1.927-1.319-2.698 c-1.594-1.592-4.068-1.711-5.517-0.262l-7.916,7.915c-0.881,0.881-0.792,2.25,0.214,3.261c0.959,0.958,2.423,1.053,3.263,0.215 c0,0,3.817-3.818,5.511-5.512c0.28-0.28,0.267-0.722,0.053-0.936c-0.08-0.08-0.164-0.164-0.244-0.244 c-0.191-0.191-0.567-0.349-0.957,0.04c-1.699,1.699-5.506,5.506-5.506,5.506c-0.18,0.18-0.635,0.127-0.976-0.214 c-0.098-0.097-0.576-0.613-0.213-0.973l7.915-7.917c0.818-0.817,2.267-0.699,3.23,0.262c0.5,0.501,0.802,1.1,0.849,1.685 c0.051,0.573-0.156,1.111-0.589,1.543l-9.547,9.549c-0.756,0.757-1.761,1.171-2.829,1.171c-1.07,0-2.074-0.417-2.83-1.173 c-0.755-0.755-1.172-1.759-1.172-2.828l0,0c0-1.071,0.415-2.076,1.172-2.83c0,0,5.322-5.324,7.209-7.211 c0.157-0.157,0.264-0.579,0.028-0.814c-0.137-0.137-0.21-0.21-0.342-0.342c-0.2-0.2-0.553-0.263-0.834,0.018 c-1.895,1.895-7.205,7.207-7.205,7.207C2.4,12.645,1.816,14.056,1.816,15.556z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <input type="text" placeholder="Write a message...." name="" value=""
+                                            style="width: 100%; border: none; outline: none; padding: 10px 35px !important; color: white; font-weight: bold; font-size: 13px; border-radius: inherit; background-color: transparent;">
+                                        <span style="position: absolute; right: 5px; cursor: pointer;"><i
+                                                class="fa-solid fa-microphone"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Select all scripts fills -->
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Animation library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({ duration: 2000 });
+        </script>
+        <script src="js/basic_Functions.js" type="module"></script>
+        <script src="js/calender.js" type="module"></script>
+        <script src="js/main.js" type="module"></script>
+
+    </body>
+
+</html>

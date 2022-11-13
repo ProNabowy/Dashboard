@@ -1,0 +1,834 @@
+* {
+    padding: 0;
+    margin: 0 !important;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+
+body {
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden !important;
+}
+
+
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --main-color: #39393987;
+    --second-color: #393939;
+    --light-color: #393939;
+    --off-dark: #1a1c20;
+    --off-white: #f9f9f9;
+    --near-to-yellow: #f6dc87;
+    --box-shadow: 0px 0 9px 3px #27292d;
+    --trasnition: 0.5s;
+
+}
+
+body.light-mode {
+    --bg-color: #f1f5fb;
+        --text-color: black;
+    --main-color: #ffffff;
+    --second-color: white;
+    --off-dark: white;
+    --light-color: #f1f5fb;
+}
+
+                            /* ================================= Custom Scrool Bar =================================  */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--second-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+    background-color: #6a6a6a;
+}
+
+
+                            /* =================================  End Custom Scrool Bar ================================= */
+
+/* 
+                                ================================= Gloable Classes =================================
+*/
+.fw-bold {
+    font-weight: 600 !important;
+}
+.fs-oblique {
+    font-style: oblique !important;
+}
+body.light-mode .bg-white {
+    background-color: black !important;
+}
+
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+.active_toggle_btn {
+    background-color: #777;
+    color: white !important;
+    /* padding: 11px 10px !important; */
+}
+.active_scale_with_right {
+    visibility: visible !important;
+    opacity: 1 !important;
+    right: 0;
+    transform: translate(0%, -50%) scale(1) !important;
+}
+.scale_controal {
+    transform: translate(-50%, -50%) scale(1) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 100;
+}
+.main-btn {
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    padding: 5px 10px !important;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+                            /* =================================  Customize Dashboard index Page  ================================= */
+
+.user-tasks {
+    transition: var(--trasnition);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+    transform: scale(0);
+    padding: 50px !important;
+    top: 50%;
+    width: 84%;
+    background-color: var(--light-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: -1500px;
+}
+
+.card.dragging {
+    opacity: 0.8;
+}
+
+.user-tasks .close {
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #f15c5c;
+
+}
+
+.lvl {
+    font-size: 12px;
+    padding: 2px 10px !important;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.high {
+    background-color: #ff00005c;
+    color: red;
+}
+
+.medium {
+    background-color: #ffff0045;
+    color: black;
+}
+
+.low {
+    background-color: #00800052;
+    color: green;
+}
+
+
+                            /* =================================  Customize Setting Page  ================================= */
+                            /* =================================  Customize Setting Page  ================================= */
+
+
+.nav-wrapper {
+  width: 300px;
+  padding: 20px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.nav-wrapper .logo::after {
+    content: "";
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.nav-wrapper .logo::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.nav-wrapper .logo {
+  width: 100%;
+  margin-bottom: 30px !important;
+}
+.nav-wrapper ul {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.link-item:last-child {
+  margin-top: 50px !important;
+}
+.link-item a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.link-item a span {
+  transition: transform 0.5s;
+}
+.link-item:last-child span h4 {
+  line-height: 1;
+}
+.link-item:last-child span p {
+  font-size: 12px;
+}
+.link-item svg {
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 20px !important;
+}
+
+                            /* =================================  Customize Setting Page  ================================= */
+
+.setting-media.active-border {
+    border: 2px solid #0075ff;
+}
+
+.setting-nav {
+    position: relative;
+}
+
+.setting-nav.active_Item::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #0075ff;
+}
+
+
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background-color: blue;
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: blue;
+}
+/* 
+    =========================================== radio box Styling ========================================
+*/
+
+.backup-control input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.backup-control .date label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.backup-control .date label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.backup-control .date label::after {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0075ff;
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+.backup-control .date input[type="radio"]:checked+label::before {
+    border-color: #0075ff;
+}
+
+.backup-control .date input[type="radio"]:checked+label::after {
+    transform: scale(1);
+}
+
+
+/* 
+    ========================================= End Customize Setting Page  ================================= 
+*/
+
+
+/* 
+    ========================================= Start Customize Calendar Page  ================================= 
+*/
+
+
+.prevLastDays,
+.nextDays {
+    opacity: 0.4;
+}
+.current_day {
+    height: 30px;
+    width: 30px;
+    background-color: var(--bs-link-color);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 auto !important;
+}
+.pseudo-time::after {
+    content: "";
+    height: calc(100% - 20px);
+    width: 0;
+    border: 1px dashed var(--bs-link-color);
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+.pseudo-time::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--bs-link-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 11px;
+    top: 5px;
+}
+.time-line-task {
+    cursor: pointer;
+}
+.time-line-task.active_task {
+    background-color: #2f333c !important;
+}
+body.light-mode .time-line-task.active_task {
+        background-color: #315bb947 !important;
+}
+
+.full-chat h6::after {
+    content: "";
+    width: 35%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #555;
+}
+.full-chat h6::before {
+    content: "";
+    width: 35%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    background-color: #555;
+}
+body.light-mode .chat-wrapper p,
+body.light-mode .chat-wrapper span {
+    opacity: 1 !important;
+}
+
+/* 
+    ========================================= End Customize Calendar Page  ================================= 
+*/
+/* 
+    ========================================= End Customize Profile Page  ================================= 
+*/
+
+.cover-img::after {
+    content: "";
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to left, #fffefe ,#3b3bc9);
+    border-radius: inherit;
+    z-index: 0;
+}
+
+section.wrapper .layout::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007d;
+    z-index: -1;
+}
+/* 
+    ========================================= End Customize Profile Page  ================================= 
+*/
+
+/* 
+    =========================================== Swiper Styling ========================================
+*/
+
+.swiper {
+    margin: 20px 0 !important;
+    width: 100%;
+    /* min-height: 100px; */
+    padding: 10px 0 10px 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    transform: translateY(-50%);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 13px !important;
+    color: #ff549b;
+    font-weight: bolder;
+    left: 10px;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+/* 
+    =========================================== End Swiper Styling ========================================
+*/
+
+
+/* 
+    =========================================== make Dashboard it Responsive ========================================
+*/
+@media (max-width:1499px) {
+    .setting-media {
+        width: calc(97% / 2) !important;
+    }
+
+    .delete-member {
+        width: 55% !important;
+    }
+}
+
+@media (max-width:1299px) {
+    .tasks .card {
+        width: 100% !important;
+    }
+
+    .going-card {
+        width: 100% !important;
+    }
+
+    .invite-form {
+        width: 55% !important;
+    }
+}
+
+@media (max-width:1199px) {
+    .setting-media {
+        width: calc(100% / 1) !important;
+    }
+
+    .setting-media textarea {
+        max-width: 100%;
+    }
+    .pseudo-time {
+        width: 20% !important;
+    }
+    .time-line-task {
+        width: 80% !important;
+    }
+    .layout {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    header form {
+        width: 300px !important;
+        margin: 20px auto !important;
+    }
+
+    header .notifications {
+        width: 60% !important;
+        margin: 20px auto !important;
+    }
+
+    section table tr td img {
+        display: none;
+    }
+
+    section table tbody tr td:nth-child(4),
+    section table thead tr td:nth-child(4),
+    section table tbody tr td:nth-child(5),
+    section table thead tr td:nth-child(5) {
+        display: none;
+    }
+
+    .delete-member {
+        width: 85% !important;
+    }
+
+    .invite-form {
+        width: 75% !important;
+    }
+    .img-profile img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .img-profile div:nth-child(2) {
+        margin-top: 45px !important;
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header .notifications {
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+
+    .logo {
+        font-size: 7px;
+        padding: 10px 0 !important;
+        margin-top: 20px !important;
+    }
+
+    .logo::after,
+    .logo::before {
+        display: none;
+    }
+
+    .page-sections {
+        width: calc(100% - 80px) !important;
+    }
+
+
+    .nav-wrapper {
+        width: 80px !important;
+    }
+    .link-item a span {
+    transition: transform 0.5s;
+    transform: translateX(100px);
+    }
+
+
+    .project-wrapper>div>h1 {
+        font-size: 15px;
+    }
+
+    .going-btn,
+    .pending-btn {
+        padding: 2px !important;
+    }
+
+    .going-card h3 {
+        font-size: 15px;
+    }
+
+    .going-card>div div:last-child {
+
+        flex-direction: column;
+    }
+
+    .going-card>div div:last-child button {
+        margin: 10px 0 !important;
+    }
+
+    .table select {
+        margin-bottom: 5px !important;
+    }
+
+    table {
+        font-size: 9px !important;
+    }
+
+    .delete-member {
+        width: 90% !important;
+    }
+
+    .invite-form {
+        width: 90% !important;
+    }
+
+    .person {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .person .person-info h3,
+    .person .person-info p {
+        font-size: 11px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .person-btns div {
+        padding: 5px !important;
+        font-size: 11px !important;
+    }
+    .pseudo-time {
+        display: none;
+    }
+    .time-line-task p ,
+    .time-line-task h4 {
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+    .time-line-task {
+        width: 100% !important;
+    }
+        .wrapper-form {
+        width: 340px !important;
+    }
+
+    .wrapper form {
+        width: 300px !important;
+    }
+
+    .left-form {
+        width: 35px !important;
+    }
+
+    .wrapper form {
+        padding: 40px 15px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .delete-member {
+        width: 98% !important;
+    }
+
+    .delete-member div:last-child {
+        flex-direction: column;
+    }
+
+    .users-control>div:nth-child(2) div p,
+    .users-control>div:nth-child(2) div div {
+        font-size: 9px !important;
+    }
+
+    .users-control>div:nth-child(2) div div:nth-child(2) div {
+        padding: 3px !important;
+        margin-right: 5px !important;
+    }
+    .days-wrapper,
+    .days {
+        font-size: 11px;
+    }
+    .days span {
+        width: 20px;
+        height: 20px;
+    }
+    .size p {
+        font-size: 12px;
+    }
+        .size p:nth-child(2),
+    .size svg {
+        display: none;
+    }
+    .profile-header {
+        flex-wrap: wrap;
+    }
+    .profile-header div:nth-child(2) {
+        margin: 10px auto !important;
+    }
+    .img-profile img {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 0 10px 0 00px !important;
+    }
+    .img-profile {
+        width: 100% !important;
+    }
+    .img-profile div:nth-child(2) {
+        margin-top: 45px !important;
+        font-size: 11px !important;
+    }
+    .info-details > div {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px !important;
+    }
+    .info-details div h5 {
+        margin-bottom: 20px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .info-details > div > div {
+        width: 100% !important;
+        font-size: 13px !important;
+    }
+    section.wrapper h1 ,
+    section.wrapper h3 {
+        font-size: 12px !important;
+    }
+    section.wrapper .wrapper-form {
+        padding: 10px !important;
+    }
+    section.wrapper form {
+        padding: 10px !important;
+    }
+}
+
+
+
+
+
+/* 
+    =========================================== Animations ========================================
+*/
+
+.nav-link:hover {
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Select css libraries -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/noramliz.css">
+        <!-- Animation library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;700;900&display=swap"
+            rel="stylesheet">
+        <title>Setting</title>
+        <style>
+            .no-gutter>[class*='col-'] {
+                padding-right: 5px !important;
+                padding-left: 5px !important;
+            }
+        </style>
+    </head>
+
+    <body class="bg-black">
+        <div class="page d-flex">
+            <div class="nav-wrapper"
+                style="border-right: 1px solid var(--main-color); background-color: var(--light-color);">
+                <h4 class="logo mb-lg-5 mb-md-5 text-white fw-bold text-center fst-italic position-relative p-3 ">
+                    ProNabowy</h4>
+                <ul class="link-items">
+                    <li class="link-item active">
+                        <a href="/index.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span style="--i: 1">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="#" class="link text-white fw-bold nav-link">
+                            <i class="fa-solid fa-bookmark"></i><span style="--i: 5">Profile</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/setting.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <span style="--i: 2">Settings</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/calendar.html" class="link text-white-50 nav-link">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span style="--i: 3">Calender</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/files.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span style="--i: 4">Files</span>
+                        </a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/contact.html" class="link text-white-50 nav-link">
+                            <i class="fa-solid fa-address-card"></i>
+                            <span style="--i: 6">Contact</span>
+                        </a>
+                    </li>
+
+                    <li class="link-item light-mode">
+                        <a href="#" class="link text-white-50 nav-link">
+                            <div class="mode-icone"><i class="fa-regular fa-moon"></i></div>
+                            <span style="--i: 8">dark mode</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-aos="fade-left" class="page-sections  text-white"
+                style="background-color: var(--bg-color); width: calc(100% - 300px);">
+                <div class="container">
+                    <div class="flex-wrap p-2 pt-0" style="background-color: var(--off-dark);">
+                        <div class="cover-img w-100 position-relative bg-danger"
+                            style="min-height: 150px; border-radius: 55px 0 0 0 ;">
+                        </div>
+                        <div class="d-flex-between profile-header  mb-2">
+                            <div class="img-profile d-flex align-items-center p-2">
+                                <div>
+                                    <img src="./images/nabowy-cover.jpg" alt="img"
+                                        style="margin-left: 30px !important; width: 130px; height:130px; border: 3px solid white; border-radius: 50%; z-index: 10; position: relative;">
+                                </div>
+                                <div class="mt-4 ms-4">
+                                    <p class="fw-bold text-white" style="font-size: 25px;">Porfile</p>
+                                    <p class="text-white-50">Update Your Photo and Personal Details</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mt-5 me-4 ">
+                                <div class="main-btn me-3 " style="border: 1px solid;">Cansel</div>
+                                <div class="main-btn me-3"
+                                    style="background-color: var(--light-color); border: 1px solid;"><a
+                                        class="text-white-50" download="images/cv.PNG" href="#">Save</a></div>
+                            </div>
+                        </div>
+                        <div class="info-details user-select-none">
+                            <div class="row p-3 pb-3 mb-2" style="border-bottom: 2px solid var(--light-color);">
+                                <h5 class="fw-bold col-4" style="letter-spacing: 1.5px;">UserName</h5>
+                                <div class="col-7 d-flex align-items-center me-lg-5"
+                                    style="border-radius: 8px; border: 2px solid var(--light-color);">
+                                    <div class="me-3  p-2 fw-bold"
+                                        style="font-size: 13px; border-right:2px solid var(--light-color);">
+                                        <a class="text-white-50" href="https://www.nabowy.online"
+                                            target="_blank">nabowy.online</a>
+                                    </div>
+                                    <p class="fw-bold p-2 text-white" style="font-size: 13px;">Mahmoud Nabowy</p>
+                                </div>
+                            </div>
+                            <div class="row p-3 pb-3 mb-2" style="border-bottom: 2px solid var(--light-color);">
+                                <h5 class="fw-bold col-4">Website</h5>
+                                <div class="col-7 d-flex align-items-center me-lg-5"
+                                    style="border-radius: 8px; border: 2px solid var(--light-color);">
+                                    <div class="me-3  p-2 fw-bold"
+                                        style="font-size: 13px; border-right:2px solid var(--light-color);">
+                                        <a class="text-white-50" href="https://www.nabowy.online"
+                                            target="_blank">https://</a>
+                                    </div>
+                                    <p class="fw-bold p-2 text-white" style="font-size: 13px;"><a
+                                            href="https://www.nabowy.online" target="_blank"
+                                            class="text-white-50">www.nabowy.online</a></p>
+                                </div>
+                            </div>
+                            <div class="row p-3 pb-3 mb-2" style="border-bottom: 2px solid var(--light-color);">
+                                <h5 class="fw-bold col-4">Your Photo
+                                    <p class="mt-1 text-white-50" style="font-size: 10px;">This Will Be displayed on
+                                        your profile</p>
+                                </h5>
+                                <div class="col-7 d-flex-between me-lg-5" style="border-radius: 8px;">
+                                    <div class="fw-bold">
+                                        <img src="./images/nabowy-cover.jpg" alt="img"
+                                            style="cursor: pointer; width: 60px; height:60px; border: 3px solid white; border-radius: 50%; z-index: 10; position: relative;">
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="me-2 fw-bold text-white-50 delete-img-btn"
+                                            style="cursor: pointer; font-size: 15px;">Delete</p>
+                                        <p class="me-2 fw-bold text-white-50 update-img-btn"
+                                            style="cursor: pointer; font-size: 15px;">Update</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-start p-3 pb-3 mb-2"
+                                style="border-bottom: 2px solid var(--light-color);">
+                                <h5 class="fw-bold col-4">Your bio
+                                    <p class="mt-1 text-white-50" style="font-size: 10px;">Write A short Intoducation
+                                    </p>
+                                </h5>
+                                <div class="col-7 ">
+                                    <div class="d-flex-center flex-wrap me-lg-5 mb-3">
+                                        <select class="text-white"
+                                            style=" outline: none; background: transparent; cursor: pointer; border: 2px solid var(--light-color); padding: 5px 100px 5px 5px !important; border-radius: 5px;">
+                                            <option value="Select Text" hidden>Select Text</option>
+                                            <option class="fw-normal text-black" value="fw-normal">Normal Text</option>
+                                            <option class="fw-bold text-black" value="fw-bold">Bold Text</option>
+                                            <option class="fw-bolder text-black" value="fw-bolder">Bolder Text</option>
+                                        </select>
+                                        <div class="ms-3 d-flex-center ">
+                                            <p class="fw-bold text-white-50 me-3 bold-btn"
+                                                style="font-size: 22px; cursor: pointer;">B</p>
+                                            <p class="fw-bold text-white-50 me-3 oblique-btn"
+                                                style="font-style: oblique; font-size: 22px; cursor: pointer;">i</p>
+                                        </div>
+                                    </div>
+                                    <textarea class="text-white-50 fw-bold p-2" maxlength="400" cols="50" rows="3"
+                                        style="max-width: 100%; border: 2px solid var(--light-color); background-color: transparent; outline: none;"></textarea>
+                                    <p class="fw-bold text-white-50" style="font-size: 11px;">400 characters left</p>
+                                </div>
+                            </div>
+                            <div class="row p-3 pb-3 mb-2" style="border-bottom: 2px solid var(--light-color);">
+                                <h5 class="fw-bold col-4" style="letter-spacing: 1.5px;">Jop Tittle</h5>
+                                <div class="col-7 me-lg-5">
+                                    <div class="p-2 w-100 fw-bold"
+                                        style="border-radius: 8px; border: 2px solid var(--light-color);">Front-End
+                                        Developer</div>
+                                    <p class="fw-bold mt-3" style=" user-select: none; font-size: 13px;">
+                                        <input style="cursor: pointer;" type="checkbox" id="title-Profile">
+                                        <label class="ms-2" style="cursor: pointer;" for="title-Profile">Show My Jop
+                                            title in My Profile</label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row p-3">
+                                <h5 class="fw-bold col-4">Alternative Contact email
+                                    <p class="mt-1 text-white-50" style="font-size: 10px;">This an alternative email if
+                                        you'd like to be contacted via a different email</p>
+                                </h5>
+                                <div class="col-7 me-lg-5">
+                                    <div class="p-2  w-100 fw-bold"
+                                        style="border-radius: 8px; border: 2px solid var(--light-color);"><span
+                                            class="text-white-50"><i class="fa-solid fa-envelope me-2"></i></span>
+                                        nabwoy.wrok@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Select all scripts fills -->
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Animation library -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({ duration: 1500 });
+        </script>
+        <script src="js/basic_Functions.js" type="module"></script>
+        <script src="js/profile.js" type="module"></script>
+        <script src="js/main.js" type="module"></script>
+    </body>
+
+</html>
