@@ -2,8 +2,6 @@ import { setSwiperImg } from "./dom_Functions.js";
 import {images , randomNum , filterApperUi , setUserName , fullscreen_img} from "./basic_Functions.js";
 // Create function To check if Local Storage Have name or not
 
-( function ()
-{
     setUserName(".user-name" , "name");
 
 let arrayOftasks = [
@@ -70,8 +68,8 @@ function getValueFromUser()
 
 
     tasksObject = Object({
-        id: randomNum(),
-        deleteId: randomNum(),
+        id: Math.random(),
+        deleteId: Math.random(),
         level: null,
         // this Function To Set The Current Level User Choseen
         setLevel: function ()
@@ -82,6 +80,7 @@ function getValueFromUser()
             });
         }
     });
+    
 
     // Set object value when user write it from Form Componant
     tasksObject.title = input_title.value;
@@ -91,28 +90,9 @@ function getValueFromUser()
 
 }
 
-    // ==================================  active_Plus_Btn ====================================
-// this Function to Re_active New task btn
-const active_Plus_Btn = () =>
-{
-    // ==================================  Select Elements ====================================
-    const user_tasks = document.querySelector(".user-tasks");
-    const plus_btn = document.querySelector(".fa-plus").parentElement;
-    const close_btn = document.querySelector(".close");
-
-    plus_btn.addEventListener("click", () =>
-    {
-        user_tasks.classList.add("active_scale_with_right");
-    });
-    // Hide Form
-    close_btn.addEventListener("click", () =>
-    {
-        user_tasks.classList.remove("active_scale_with_right");
-    });
-}
-
 const darwCardsUI = (cards) => 
 {
+    
     // Select Current Parent Element
     const tasksParent = document.querySelector(".tasks");
 
@@ -191,7 +171,27 @@ const darwCardsUI = (cards) =>
     addDataToLocalStorage();
 }
 
-darwCardsUI(arrayOftasks);
+    darwCardsUI(arrayOftasks);
+    
+// ==================================  active_Plus_Btn ====================================
+// this Function to Re_active New task btn
+function active_Plus_Btn ()
+{
+    // ==================================  Select Elements ====================================
+    const user_tasks = document.querySelector(".user-tasks");
+    const plus_btn = document.querySelector(".fa-plus").parentElement;
+    const close_btn = document.querySelector(".close");
+
+    plus_btn.addEventListener("click", () =>
+    {
+        user_tasks.classList.add("active_scale_with_right");
+    });
+    // Hide Form
+    close_btn.addEventListener("click", () =>
+    {
+        user_tasks.classList.remove("active_scale_with_right");
+    });
+}
 
 const toggleDeleteBtn = () =>
 {
@@ -563,5 +563,3 @@ const select_Corract_Opation = _ =>
     });
 }
 select_Corract_Opation();
-
-})()
