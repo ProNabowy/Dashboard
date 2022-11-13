@@ -55,6 +55,10 @@ body.light-mode {
     background-color: #6a6a6a;
 }
 
+.container {
+    max-width: 100%;
+}
+
 
                             /* =================================  End Custom Scrool Bar ================================= */
 
