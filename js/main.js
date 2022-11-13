@@ -57,5 +57,3 @@ function add_remove(text_color_element , text_color_elment_with_opaicty , statue
     });
   }
 }
-
-
