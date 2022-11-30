@@ -4,7 +4,7 @@ const images = [
     "https://img.freepik.com/free-photo/young-man-student-with-notebooks-showing-thumb-up-approval-smiling-satisfied-blue-studio-background_1258-65597.jpg?w=1380&t=st=1668347739~exp=1668348339~hmac=ef33d15202cf819ef8df01edfa1185b71cf031b4df74f094573f8055ccac84c1",
     "https://img.freepik.com/premium-photo/closeup-young-female-model-pointing-fingers-left-copy-space-showing-company-logo-smiling-standing-white-background_176420-52167.jpg?w=1380",
     "https://vtphna.org.au/wp-content/uploads/2019/09/Population-Health-Planning.jpg",
-    "https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/168893736_1767234440113041_7400303582363568484_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFCDZWtQzO3gBvS0EJPucUQW4AIXF0DE9BbgAhcXQMT0EDKd2dIou-_--PQ4zZGGpzViOtqxaaAxSlU5Kxx8gLX&_nc_ohc=NZkjlN6ECjEAX-7yUbs&_nc_ht=scontent-hbe1-1.xx&oh=00_AfAK6_IlcM8sk5t1rkzlK_6Uwsz-hPte4UB6oz8V_QMTsA&oe=63986D1B",
+    "https://img.freepik.com/free-photo/excited-stylish-curly-haired-girl-sunglasses-pointing-right-showing-way_176420-20193.jpg?w=1380&amp;t=st=1668348020~exp=1668348620~hmac=60f633b3e633f17f0a9bc7e8fbed0dc46c2671306a60cc4d3c0060fdb6f70fb5",
     "https://img.freepik.com/free-photo/excited-stylish-curly-haired-girl-sunglasses-pointing-right-showing-way_176420-20193.jpg?w=1380&amp;t=st=1668348020~exp=1668348620~hmac=60f633b3e633f17f0a9bc7e8fbed0dc46c2671306a60cc4d3c0060fdb6f70fb5",
     "https://img.freepik.com/free-photo/excited-stylish-curly-haired-girl-sunglasses-pointing-right-showing-way_176420-20193.jpg?w=1380&t=st=1668348020~exp=1668348620~hmac=60f633b3e633f17f0a9bc7e8fbed0dc46c2671306a60cc4d3c0060fdb6f70fb5",
     "https://img.freepik.com/free-photo/front-view-male-student-wearing-black-backpack-holding-copybooks-files-blue-wall_140725-42636.jpg?w=1380&t=st=1668347514~exp=1668348114~hmac=20ce02fd91a51e41cbff5bdfd3c6927ad6e6dd66fb36bd5e386f71575e16f03e",
@@ -13,7 +13,7 @@ const images = [
     "https://img.freepik.com/free-photo/excited-stylish-curly-haired-girl-sunglasses-pointing-right-showing-way_176420-20193.jpg?w=1380&amp;t=st=1668348020~exp=1668348620~hmac=60f633b3e633f17f0a9bc7e8fbed0dc46c2671306a60cc4d3c0060fdb6f70fb5",
     "https://img.freepik.com/free-photo/front-view-male-student-wearing-black-backpack-holding-copybooks-files-blue-wall_140725-42636.jpg?w=1380&t=st=1668347514~exp=1668348114~hmac=20ce02fd91a51e41cbff5bdfd3c6927ad6e6dd66fb36bd5e386f71575e16f03e",
     "https://img.freepik.com/premium-photo/closeup-young-female-model-pointing-fingers-left-copy-space-showing-company-logo-smiling-standing-white-background_176420-52167.jpg?w=1380",
-    "https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/168893736_1767234440113041_7400303582363568484_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFCDZWtQzO3gBvS0EJPucUQW4AIXF0DE9BbgAhcXQMT0EDKd2dIou-_--PQ4zZGGpzViOtqxaaAxSlU5Kxx8gLX&_nc_ohc=NZkjlN6ECjEAX-7yUbs&_nc_ht=scontent-hbe1-1.xx&oh=00_AfAK6_IlcM8sk5t1rkzlK_6Uwsz-hPte4UB6oz8V_QMTsA&oe=63986D1B",
+    "https://img.freepik.com/free-photo/young-man-student-with-notebooks-showing-thumb-up-approval-smiling-satisfied-blue-studio-background_1258-65597.jpg?w=1380&t=st=1668347739~exp=1668348339~hmac=ef33d15202cf819ef8df01edfa1185b71cf031b4df74f094573f8055ccac84c1",
 ];
 
 // Create function To Return a random number
