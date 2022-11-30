@@ -374,9 +374,10 @@ function animitNum()
                 clearInterval(interval);
             }
         });
-
     };
-
+    
+        setInterval(() => clearInterval(interval), 5000);
+    
 };
 
 animitNum();
