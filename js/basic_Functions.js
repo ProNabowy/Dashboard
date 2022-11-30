@@ -7,7 +7,7 @@ const images = [
     "https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/168893736_1767234440113041_7400303582363568484_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFCDZWtQzO3gBvS0EJPucUQW4AIXF0DE9BbgAhcXQMT0EDKd2dIou-_--PQ4zZGGpzViOtqxaaAxSlU5Kxx8gLX&_nc_ohc=NZkjlN6ECjEAX-7yUbs&_nc_ht=scontent-hbe1-1.xx&oh=00_AfAK6_IlcM8sk5t1rkzlK_6Uwsz-hPte4UB6oz8V_QMTsA&oe=63986D1B",
     "https://www.dunya-project.com/wp-content/uploads/2020/02/personal-9.jpg",
     "https://img.freepik.com/free-photo/excited-stylish-curly-haired-girl-sunglasses-pointing-right-showing-way_176420-20193.jpg?w=1380&t=st=1668348020~exp=1668348620~hmac=60f633b3e633f17f0a9bc7e8fbed0dc46c2671306a60cc4d3c0060fdb6f70fb5",
-    "https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/269565362_1219408268583237_2211815673541737361_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEL1MOq3AuIkK6PabFj9Yt-fRSP9k2bruR9FI_2TZuu5PjPBa69sm7a5waw9WvKBK6T6fJgpw0WZaZam6v2m6kr&_nc_ohc=aqOVkY5wWz4AX86IRS3&_nc_ht=scontent-hbe1-1.xx&oh=00_AfC1THApDOj6tsPn4ZIHUK-zjDluze2WQBU5LcPGwvmyKA&oe=637629DE",
+    "https://img.freepik.com/free-photo/portrait-man-with-beard-ukraine-sumy_8353-6061.jpg?size=626&ext=jpg&uid=R83129894&ga=GA1.2.935105513.1666868158",
     "https://img.freepik.com/free-photo/portrait-man-with-beard-ukraine-sumy_8353-6061.jpg?size=626&ext=jpg&uid=R83129894&ga=GA1.2.935105513.1666868158",
     "https://img.freepik.com/free-photo/excited-little-boy-standing-showing-okay-gesture_171337-16369.jpg?w=1380&t=st=1668348157~exp=1668348757~hmac=7d98be5148fd8011b24bc6eab00316d873a8abff194a2b759809db5a32e5a981",
     "https://www.dunya-project.com/wp-content/uploads/2020/02/personal-9.jpg",
