@@ -139,16 +139,23 @@ const chat_Logic = () =>
     {
         chat_input.addEventListener("input", (e) =>
         {
-            child_element = `
-            <div class="d-flex-center p-1 mb-2 pe-2"
-                style="box-shadow: 0px 0px 2110px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%; align-self: flex-end;">
-                <p style="font-weight: 400; font-size: 12px; width: 85%; word-break: break-all;">
-                    ${e.target.value}
-                </p>
-                <span class="text-white-50 fw-bold"
-                    style="width: 10%; font-size: 11px; align-self: flex-end; margin: 0 15px !important;">${current_time}</span>
-            </div>`
+
+            // Set A Dom Message To Get It From User
+        child_element = document.createElement("div");
+        child_element.classList = "d-flex-center p-1 mb-2 pe-2";
+        child_element.style.cssText = "box-shadow: 0px 0px 2110px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%; align-self: flex-end;";
+        let p_child = document.createElement("p");
+            p_child.style.cssText = "font-weight: 400; font-size: 12px; width: 85%; word-break: break-all;";
+            p_child.innerHTML = e.target.value;
+        let span = document.createElement("span");
+        span.style.cssText = "width: 10%; font-size: 11px; align-self: flex-end; margin: 0 15px !important;";
+            span.classList = "text-white-50 fw-bold";
+            span.innerHTML = current_time;
+            child_element.appendChild(p_child);
+            child_element.appendChild(span);
         });
+
+
 
         // Set user message when he click on enter button
         chat_input.addEventListener("focus", () =>
@@ -159,14 +166,15 @@ const chat_Logic = () =>
                 {
                     if (chat_Wrapper.value != "")
                     {
-                        chat_Wrapper.innerHTML += child_element;
+                        chat_Wrapper.appendChild(child_element);
                         chat_input.value = "";
+
                         setTimeout(() =>
                         {
                             send_Auto_Message(chat_Wrapper, current_time);
-                        }, 1000);
+                        }, 2000);
                     }
-                    return false;
+                    return true;
                 }
             });
         });
@@ -197,18 +205,23 @@ const chat_Logic = () =>
         "Thanks for entering the Nabowy Dashboard spring sweepstakes! We’ll reach out to the winners on August 31 by noon PST."
     ];
 
-    function send_Auto_Message (wrapper_element , date)
+    function send_Auto_Message(wrapper_element, date)
     {
-        const message = `
-                            <div class="d-flex-center p-1 mb-2"
-                                style="box-shadow: 0px 0px 2212210px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;">
-                                <p style="font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;">
-                                    ${array_Of_Message[Math.floor(Math.random() * array_Of_Message.length)]}
-                                    starting , i'll tell you more about it later</p>
-                                <span class="text-white-50 fw-bold "
-                                    style="opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;">${date}</span>
-                            </div>`;
-        wrapper_element.innerHTML += message;
+        const bot_message = document.createElement("div");
+        bot_message.style.cssText = "box-shadow: 0px 0px 2212210px 20px #575f6e38 inset; border-radius: 5px; width: fit-content; max-width: 90%;";
+        bot_message.classList = "d-flex-center p-1 mb-2";
+        let p_child = document.createElement("p");
+        p_child.style.cssText = "font-weight: 400; opacity: 0.2; font-size: 12px; width: 85%;";
+        p_child.innerHTML = array_Of_Message[Math.floor(Math.random() * array_Of_Message.length)]; // Random message from array of messages
+        let span = document.createElement("span");
+        span.style.cssText = "opacity: 0.4; width: 10%; font-size: 11px; align-self: flex-end; margin: 0 10px !important;";
+        span.innerText = date;
+        // append chiled to main div
+        bot_message.appendChild(p_child);
+        bot_message.appendChild(span);
+
+        wrapper_element.appendChild(bot_message);
+        return true;
     }
 
 
