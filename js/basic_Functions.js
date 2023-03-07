@@ -1,4 +1,3 @@
-
 const images = [
     "https://img.freepik.com/free-photo/front-view-male-student-wearing-black-backpack-holding-copybooks-files-blue-wall_140725-42636.jpg?w=1380&t=st=1668347514~exp=1668348114~hmac=20ce02fd91a51e41cbff5bdfd3c6927ad6e6dd66fb36bd5e386f71575e16f03e",
     "https://img.freepik.com/free-photo/young-man-student-with-notebooks-showing-thumb-up-approval-smiling-satisfied-blue-studio-background_1258-65597.jpg?w=1380&t=st=1668347739~exp=1668348339~hmac=ef33d15202cf819ef8df01edfa1185b71cf031b4df74f094573f8055ccac84c1",
@@ -15,7 +14,6 @@ const images = [
     "https://img.freepik.com/premium-photo/closeup-young-female-model-pointing-fingers-left-copy-space-showing-company-logo-smiling-standing-white-background_176420-52167.jpg?w=1380",
     "https://img.freepik.com/free-photo/young-man-student-with-notebooks-showing-thumb-up-approval-smiling-satisfied-blue-studio-background_1258-65597.jpg?w=1380&t=st=1668347739~exp=1668348339~hmac=ef33d15202cf819ef8df01edfa1185b71cf031b4df74f094573f8055ccac84c1",
 ];
-
 // Create function To Return a random number
 let randomNum = () =>
 {
