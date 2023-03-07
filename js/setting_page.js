@@ -139,18 +139,9 @@ import { darwInviteUI } from "./dom_Functions.js";
         const still_keep_member = document.querySelector(".delete-member .main-btn ");
         const removeMember_btn = document.querySelectorAll(".delete-member .main-btn")[1];
         const phragraph_Text = document.querySelector(".delete-member p ");
-
+        const trashs = document.querySelectorAll(".trash");
         // Check if target click have the same class of delete icone to set active class to delete message
-
-        user_control.addEventListener("click", (e) =>
-        {
-            // Check If The Cureent event is a delete icone or not to set scale class to wrapper div
-            if (e.target.classList.contains("fa-trash-can"))
-            {
-                delete_Message_Wrapper.classList.add("scale_controal");
-            }
-
-        });
+        trashs.forEach(trash => trash.addEventListener("click", () => delete_Message_Wrapper.classList.add("scale_controal")));
         // ================ remvoe active class when user click on cansel message ================
         member_close_message.addEventListener("click", () => delete_Message_Wrapper.classList.remove("scale_controal"));
 
