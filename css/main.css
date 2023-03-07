@@ -77,7 +77,6 @@ body.light-mode .bg-white {
 
 
 .d-flex-between {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -142,6 +141,7 @@ body.light-mode .bg-white {
     right: -1500px;
 }
 
+
 .card.dragging {
     opacity: 0.8;
 }
@@ -180,8 +180,7 @@ body.light-mode .bg-white {
 }
 
 
-                            /* =================================  Customize Setting Page  ================================= */
-                            /* =================================  Customize Setting Page  ================================= */
+                            /* =================================  Customize nav Page  ================================= */
 
 
 .nav-wrapper {
@@ -671,7 +670,9 @@ section.wrapper .layout::after {
     section table tbody tr td:nth-child(4),
     section table thead tr td:nth-child(4),
     section table tbody tr td:nth-child(5),
-    section table thead tr td:nth-child(5) {
+    section table thead tr td:nth-child(5),
+    section table tbody tr td:nth-child(6),
+    section table thead tr td:nth-child(6)  {
         display: none;
     }
 
@@ -710,12 +711,13 @@ section.wrapper .layout::after {
     }
 
     .page-sections {
-        width: calc(100% - 80px) !important;
+        width: calc(100% - 60px) !important;
     }
 
 
     .nav-wrapper {
         width: 80px !important;
+        padding: 5px !important;
     }
     .link-item a span {
     transition: transform 0.5s;
@@ -733,7 +735,7 @@ section.wrapper .layout::after {
     }
 
     .going-card h3 {
-        font-size: 15px;
+        font-size: 13px !important;
     }
 
     .going-card>div div:last-child {
@@ -807,6 +809,13 @@ section.wrapper .layout::after {
 }
 
 @media (max-width: 550px) {
+    .card h2  {
+        font-size: 13px !important;
+    }
+    .card > p {
+        font-size: 11px !important;
+        max-width: 100% !important;
+    }
     .delete-member {
         width: 98% !important;
     }
@@ -821,8 +830,7 @@ section.wrapper .layout::after {
     }
 
     .users-control>div:nth-child(2) div div:nth-child(2) div {
-        padding: 3px !important;
-        margin-right: 5px !important;
+        display: none;
     }
     .days-wrapper,
     .days {
