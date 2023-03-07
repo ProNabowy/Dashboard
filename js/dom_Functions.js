@@ -68,13 +68,13 @@ const darwInviteUI = (arrayOfItems , deleteFromUi , images , randomNum) =>
                         <h3 class="fw-bold  mb-2" style="font-size: 13px;">${person.fName} ${person.lastName} <span
                                 style="padding: 5px !important; color:white; border-radius: 4px; margin-left: 5px !important; background-color: #404148;">Panding</span>
                         </h3>
-                        <p class="text-white-50 fw-bold" style="font-size: 12px;">${person.email}</p>
+                        <p class="text-white-50 fw-bold" style="font-size: 12px; margin-bottom: 10px !important;">${person.email}</p>
                     </div>
                 </div>
                 <div class="d-flex align-items-center person-btns">
-                    <div class="main-btn resend_invite me-1" style="background-color: var(--bg-color); font-size: 13px;">Resend Invite
+                    <div class="main-btn resend_invite me-3" style="background-color: #0075ff ; font-size: 13px;">Resend Invite
                     </div>
-                    <div class="main-btn delete-invite" id="${person.id}" style="background-color: transparent; color: #8c2f4a; border: 1px solid var(--text-color);">
+                    <div class="main-btn delete-invite" id="${person.id}" style="background-color: #0075ff; color: white; font-size: 13px;">
                         Remove
                         Invite</div>
                 </div>
