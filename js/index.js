@@ -369,15 +369,15 @@ function animitNum()
         {
             eachElement.innerHTML = count++;
 
-            if (Number(eachElement.innerHTML) === randomNums[Math.round(Math.random() * randomNums.length)] && Number(eachElement.innerHTML) < 1000)
+            if (Number(eachElement.innerHTML) === randomNums[Math.round(Math.random() * randomNums.length)])
             {
                 clearInterval(interval);
             }
         });
+        
     };
     
-        setInterval(() => clearInterval(interval), 5000);
-    
+    setInterval(() => clearInterval(interval), 5000);
 };
 
 animitNum();
